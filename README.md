@@ -5,28 +5,9 @@ This library exports the `toObservable` function which takes your Svelte Store (
 
 Then you can add RXJS operators on them to do easy data transformations
 
-`toObservable`:
-```
-export function toObservable<T>(svelteStore: Writable<T> | Readable<T>): Observable<T> {
-  let unsub: Unsubscriber;
-  const obs = new Observable<T>((subscriber) => {
-    unsub = svelteStore.subscribe((val) => {
-      subscriber.next(val);
-    });
-
-    // we return the teardown function that will unsubscribe from the svelte store
-    return () => {
-      unsub();
-    };
-  });
-
-  return obs;
-}
-
-``` 
+API: `export function toObservable<T>(svelteStore: Writable<T> | Readable<T>): Observable<T>`
 
 Example svelte `+page.svelte` to show how to apply this function and a simple rxjs operator:
-
 ```
 <script lang="ts">
 	import { writable } from 'svelte/store';
