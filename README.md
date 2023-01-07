@@ -30,5 +30,5 @@ Example svelte `+page.svelte` to show how to apply this function with a simple r
 
 ``` 
 # Other
-Also posted as issue for the Svelte ecosystem - hoping this library will become obsolete https://github.com/sveltejs/svelte/issues/8173
+Also posted as issue for the Svelte ecosystem - hoping this/such function becomes part of the larger ecosystem https://github.com/sveltejs/svelte/issues/8173
 
