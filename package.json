@@ -1,0 +1,30 @@
+{
+  "name": "svelte-to-observable",
+  "version": "0.0.1",
+  "private": false,
+  "homepage": "https://github.com/Tommertom/svelte-to-observable",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tommertom/svelte-to-observable.git"
+  },
+  "keywords": [
+    "svelte",
+    "sveltekit",
+    "rxjs"
+  ],
+  "main": "index.ts",
+  "module": "index.ts",
+  "bugs": {
+    "url": "https://github.com/Tommertom/svelte-to-observable/issues"
+  },
+  "description": "Simple function to transform your Svelte Store into Observable",
+  "scripts": {
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write ."
+  },
+  "type": "module",
+  "dependencies": {
+    "rxjs": "^7.8.0",
+    "svelte": "^3.55.0"
+  }
+}
