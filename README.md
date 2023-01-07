@@ -5,7 +5,7 @@ This library exports the `toObservable` function which takes your Svelte Store (
 
 Then you can add RXJS operators on them to do easy data transformations
 
-API: `export function toObservable<T>(svelteStore: Writable<T> | Readable<T>): Observable<T>`
+API: `function toObservable<T>(svelteStore: Writable<T> | Readable<T>): Observable<T>`
 
 Example svelte `+page.svelte` to show how to apply this function and a simple rxjs operator:
 ```
