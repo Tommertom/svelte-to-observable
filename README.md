@@ -7,6 +7,7 @@ Then you can add RXJS operators on them to do easy data transformations
 
 # API
 Typescript: `function toObservable<T>(svelteStore: Writable<T> | Readable<T>): Observable<T>`
+
 Javscript: `function toObservable(svelteStore)`
 
 # Example
