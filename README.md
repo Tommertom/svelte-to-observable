@@ -5,9 +5,12 @@ This library exports the `toObservable` function which takes your Svelte Store (
 
 Then you can add RXJS operators on them to do easy data transformations
 
-API: `function toObservable<T>(svelteStore: Writable<T> | Readable<T>): Observable<T>`
+# API
+Typescript: `function toObservable<T>(svelteStore: Writable<T> | Readable<T>): Observable<T>`
+Javscript: `function toObservable(svelteStore)`
 
-Example svelte `+page.svelte` to show how to apply this function and a simple rxjs operator:
+# Example
+Example svelte `+page.svelte` to show how to apply this function with a simple rxjs operator:
 ```
 <script lang="ts">
 	import { writable } from 'svelte/store';
@@ -25,7 +28,6 @@ Example svelte `+page.svelte` to show how to apply this function and a simple rx
 <a href="/other">Go to other page so we can see unsubscribe run</a>
 
 ``` 
-
 # Other
 Also posted as issue for the Svelte ecosystem - hoping this library will become obsolete https://github.com/sveltejs/svelte/issues/8173
 
