@@ -5,20 +5,20 @@ This library exports the `toObservable` function and the `fromSvelteStore` funct
 
 Then you can add RXJS operators on them to do easy data transformations
 
-# API for people coming from Svelte 
+## API for people coming from Svelte 
 Typescript: `function toObservable<T>(svelteStore: Writable<T> | Readable<T>): Observable<T>`
 
 Javscript: `function toObservable(svelteStore)`
 
-# API for people coming from RxJS 
+## API for people coming from RxJS 
 Typescript: `function fromSvelteStore<T>(svelteStore: Writable<T> | Readable<T>): Observable<T>`
 
 Javscript: `function fromSvelteStore(svelteStore)`
 
-# What is the difference?
+## What is the difference?
 Nothing - they are the same functions, just two diferent names.
 
-# Example
+## Example
 Example svelte `+page.svelte` to show how to apply this function with a simple rxjs operator:
 ```
 <script lang="ts">
@@ -37,6 +37,6 @@ Example svelte `+page.svelte` to show how to apply this function with a simple r
 <a href="/other">Go to other page so we can see unsubscribe run</a>
 
 ``` 
-# Other
+## Other
 Also posted as issue for the Svelte ecosystem - hoping this/such function becomes part of the larger ecosystem https://github.com/sveltejs/svelte/issues/8173
 
